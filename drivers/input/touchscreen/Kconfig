@@ -427,6 +427,11 @@ config TOUCHSCREEN_ZINITIX
 	help
 		This enable support for Zinitix over I2C based touchscreen.
 
+config TOUCHSCREEN_ZINITIX_AMAZING
+        tristate "Zinitix i2c touchscreen"
+        depends on I2C
+        help
+                This enable support for Zinitix over I2C based touchscreen.
 config TOUCHSCREEN_ZINITIX_TREBON
 	tristate "Zinitix i2c touchscreen"
 	depends on I2C
@@ -438,12 +443,6 @@ config TOUCHSCREEN_ZINITIX_GEIM
 	depends on I2C
 	help
 		This enable support for Zinitix over I2C based touchscreen.		
-
-config TOUCHSCREEN_MELFAS
-	tristate "Melfas i2c touchscreen"
-	depends on I2C
-	help
-		This enable support for Melfas over I2C based touchscreen.
 
 config TOUCHSCREEN_TOUCHRIGHT
 	tristate "Touchright serial touchscreen"
